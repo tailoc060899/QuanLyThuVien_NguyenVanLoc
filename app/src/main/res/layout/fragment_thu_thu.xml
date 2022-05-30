@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ThuThu_Fragment.Fragment_ThuThu"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ed_usernew"
+            android:hint="Username: "
+            android:backgroundTint="#FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ed_hotennew"
+            android:hint="Tên người dùng "
+            android:backgroundTint="#FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ed_matkhaunew"
+            android:hint="Password: "
+            android:backgroundTint="#FFFFFF"
+            android:password="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Đăng ký"
+            android:backgroundTint="#B3B2B2"
+            android:textColor="@color/black"
+            android:id="@+id/btn_dangky"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Hủy"
+            android:id="@+id/btn_huyTT"
+            android:backgroundTint="#A3A3A3"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>

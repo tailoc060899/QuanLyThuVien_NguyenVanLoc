@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/botron">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_tenTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên thành viên: Nguyễn Văn A"
+            android:textSize="17dp"
+            android:textColor="#0E0E0E"/>
+        <TextView
+            android:id="@+id/tv_namsinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm sinh: 10-10-2000"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_editTV"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit" />
+        <ImageButton
+            android:id="@+id/btn_deleteTV"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"/>
+    </LinearLayout>
+
+</LinearLayout>

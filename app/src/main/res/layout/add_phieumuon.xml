@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp">
+    <TextView
+        android:id="@+id/tv_TDPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm phiếu mượn"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:background="#03A9F4"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Tên thành viên: "
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_matv"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Tên sách: "
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_masach"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="Tình trạng: "
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ck_trasach"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đã trả sách"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ed_ngaymuon"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:hint="nhập ngày mượn"
+            android:padding="10dp"
+            android:inputType="date"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/img_dateNgayMuon"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_date"/>
+    </LinearLayout>
+
+</LinearLayout>

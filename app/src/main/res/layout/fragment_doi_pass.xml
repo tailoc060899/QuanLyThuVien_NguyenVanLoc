@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Pass_Fragment.Fragment_DoiPass"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:src="@drawable/ic_logopass" />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:text="Mật khẩu cũ: "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"/>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ed_passcu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/botronpass" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:text="Mật khẩu mới: "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"/>
+
+        <EditText
+            android:id="@+id/ed_passmoi"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/botronpass" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:text="Nhập lại mật khẩu: "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"/>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ed_repass"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/botronpass" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:text="Thay đổi"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:id="@+id/btn_thaydoi"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF9800"/>
+
+
+
+
+</LinearLayout>

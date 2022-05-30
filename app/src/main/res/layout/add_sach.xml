@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp">
+    <TextView
+        android:id="@+id/tv_TDS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sách"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:background="#03A9F4"
+        android:textColor="@color/black"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:paddingLeft="10dp"
+           android:gravity="center_vertical"
+           android:text="Tên loại sách: "
+           android:textSize="18dp" />
+
+       <Spinner
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:id="@+id/sp_maloai"/>
+   </LinearLayout>
+    <EditText
+        android:id="@+id/ed_tensach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="nhập tên sách"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/ed_giathue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="nhập giá thuê"
+        android:padding="10dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/ed_giakm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="nhập giá KM"
+        android:padding="10dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/ed_sl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="nhập so luong"
+        android:padding="10dp"
+        android:inputType="number"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/botnav_ds"
+        android:icon="@drawable/ic_ds"
+        android:title="Danh sách"/>
+    <item
+        android:id="@+id/botnav_addTT"
+        android:title="Thêm thủ thư"
+        android:icon="@drawable/ic_tv"/>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_TDTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm thành viên"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:background="#03A9F4"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/ed_tenTV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="nhập tên thành viên"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ed_NamSinhTV"
+            android:layout_width="wrap_content"
+            android:layout_weight="8"
+            android:layout_height="50dp"
+            android:hint="nhập năm sinh"
+            android:padding="10dp"
+            android:inputType="date"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/img_dateNs"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_date" />
+    </LinearLayout>
+</LinearLayout>
